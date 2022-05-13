@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.movies.MoviesFragment"
+    android:background="@color/dark_gray">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="?attr/actionBarSize">
+
+
+            <TextView
+                android:id="@+id/tvMAction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/allerta"
+                android:text="View All"
+                android:textAlignment="center"
+                android:textColor="#FFF"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@+id/rvMAction"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvMAction"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView"
+                    tools:ignore="SpeakableTextPresentCheck"
+                    tools:listitem="@layout/item_category" />
+
+            <TextView
+                android:id="@+id/tvMDrama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/allerta"
+                android:text="View All"
+                android:textAlignment="center"
+                android:textColor="#FFF"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rvMAction" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvMDrama"
+                    android:layout_width="409dp"
+                    android:layout_height="150dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvMDrama"
+                    tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck"
+                    tools:listitem="@layout/item_category" />
+
+            <TextView
+                android:id="@+id/tvMAnimation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/allerta"
+                android:text="View All"
+                android:textAlignment="center"
+                android:textColor="#FFF"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rvMDrama" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvMAnimation"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvMAnimation" />
+
+            <TextView
+                android:id="@+id/tvMComedy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/allerta"
+                android:text="View All"
+                android:textAlignment="center"
+                android:textColor="#FFF"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rvMAnimation" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvMComedy"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.538"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvMComedy" />
+
+            <TextView
+                android:id="@+id/tvMScienceFiction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/allerta"
+                android:text="View All"
+                android:textAlignment="center"
+                android:textColor="#FFF"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rvMComedy" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvMScienceFiction"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvMScienceFiction" />
+
+            <TextView
+                android:id="@+id/tvMFamily"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/allerta"
+                android:text="View All"
+                android:textAlignment="center"
+                android:textColor="#FFF"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rvMScienceFiction" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvMFamily"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvMFamily" />
+
+            <TextView
+                android:id="@+id/tvMHorror"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/allerta"
+                android:text="View All"
+                android:textAlignment="center"
+                android:textColor="#FFF"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rvMFamily" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvMHorror"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvMHorror" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/allerta"
+                android:text="Action"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/allerta"
+                android:text="Drama"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/rvMDrama"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/allerta"
+                android:text="Animation"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/rvMAnimation"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/allerta"
+                android:text="Comedy"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/rvMComedy"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/allerta"
+                android:text="Science Fiction"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/rvMScienceFiction"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/allerta"
+                android:text="Family"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/rvMFamily"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/allerta"
+                android:text="Horror"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/rvMHorror"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.core.widget.NestedScrollView>
